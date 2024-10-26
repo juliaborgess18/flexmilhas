@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@prisma/client": "^5.21.1",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.1",
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "fastify": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "dev": "tsx watch C:\\Ifes\\FlexMilhas\\flexmilhas\\src\\app\\interface-adapters\\api\\server.ts"
+  },
+  "devDependencies": {
+    "prisma": "^5.21.1"
+  }
+}

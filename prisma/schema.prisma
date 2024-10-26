@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  nome String 
+  email String 
+  senha String 
+
+  @@map("usuario")
+  movimentacaoVendedor Movimentacao[] @relation("Vendedor")
+  movimentacaoComprador Movimentacao[] @relation("Comprador")
+}
+
+model Milha {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  descricao String 
+  dataValidade String 
+
+  @@map("milha")
+  Movimentacao Movimentacao[]
+}
+
+model Movimentacao {
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  usuarioVendedor  String   @db.ObjectId
+  usuarioComprador  String   @db.ObjectId
+  milhaId    String   @db.ObjectId
+  dataVenda  String
+
+  vendedor   Usuario @relation("Vendedor", fields: [usuarioVendedor], references: [id])
+  comprador  Usuario @relation("Comprador", fields: [usuarioComprador], references: [id])
+  milha Milha @relation(fields: [milhaId], references: [id])
+
+  @@map("movimentacao")
+}
+
