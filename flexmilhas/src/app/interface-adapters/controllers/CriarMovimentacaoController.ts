@@ -1,5 +1,5 @@
 import { CriarMovimentacao } from "../../infrastructure/services/CriarMovimentacao";
-import { Movimentacao } from "../../entities/models/Movimentacao";
+import { Movimentacao } from "../../domain/entities/models/Movimentacao";
 import { FastifyReply, FastifyRequest } from "fastify";
 
 export class CriarMovimentacaoController{

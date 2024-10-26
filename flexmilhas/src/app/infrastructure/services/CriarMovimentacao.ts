@@ -1,4 +1,4 @@
-import { Movimentacao } from "../../entities/models/Movimentacao";
+import { Movimentacao } from "../../domain/entities/models/Movimentacao";
 import prismaClient from "../prisma";
 
 export class CriarMovimentacao{

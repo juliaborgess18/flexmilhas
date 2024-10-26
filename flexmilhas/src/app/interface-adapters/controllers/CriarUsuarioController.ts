@@ -1,6 +1,6 @@
 import { FastifyRequest, FastifyReply } from 'fastify';
 import { CriarUsuario } from '../../infrastructure/services/CriarUsuario';
-import { Usuario } from "../../entities/models/Usuario";
+import { Usuario } from "../../domain/entities/models/Usuario";
 
 class CriarUsuarioController{
     async handle(request:FastifyRequest, reply:FastifyReply){
