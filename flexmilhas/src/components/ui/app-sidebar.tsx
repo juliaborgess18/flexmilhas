@@ -14,22 +14,22 @@ import {
 const items = [
   {
     title: "Minhas Milhas",
-    url: "#",
+    url: "/usuario/painel/#",
     icon: TicketsPlane,
   },
   {
     title: "Comprar",
-    url: "#",
+    url: "/usuario/painel/comprar-milha",
     icon: ShoppingBag,
   },
   {
     title: "Vender",
-    url: "#",
+    url: "/usuario/painel/vender-milha",
     icon: CircleDollarSign,
   },
   {
     title: "Movimentações",
-    url: "#",
+    url: "/usuario/painel/#",
     icon: Handshake,
   },
   {

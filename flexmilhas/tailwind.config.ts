@@ -11,9 +11,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // container: {
-      //   center: true,
-      // },
 		fontFamily: {
 			sans: ['InterVariable', ...defaultTheme.fontFamily.sans],
 			},
