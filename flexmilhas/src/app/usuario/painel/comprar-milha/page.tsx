@@ -6,7 +6,9 @@ export default function Index(){
         <div>
         <div className="flex min-h-screen"> 
             <Sidebar children={undefined}></Sidebar> 
+            
             <ComprarMilha></ComprarMilha>
+            
         </div>
     </div>
     )
