@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 
+
 export function Login() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -13,7 +14,10 @@ export function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://192.168.100.61:3001/usuario/existe', {
+      // http://127.0.0.1:3001/usuario/existe
+      const endpoint = `${process.env.API_URL}/usuario/existe`;
+      console.log(endpoint)
+      const response = await axios.post("http://127.0.0.1:3001/usuario/existe", {
         email,
         senha,
       });

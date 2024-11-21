@@ -13,7 +13,10 @@ export function CriarConta() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://192.168.100.61:3001/usuario", {
+      // http://127.0.0.1:3001/usuario
+      const endpoint = `${process.env.API_URL}/usuario`;
+      console.log(endpoint)
+      const response = await axios.post("http://127.0.0.1:3001/usuario", {
         nome,
         email,
         senha,
