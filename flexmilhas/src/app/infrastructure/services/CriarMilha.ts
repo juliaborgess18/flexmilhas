@@ -1,5 +1,5 @@
 import prismaClient from "../prisma";
-import { Milha } from "../../entities/models/Milha";
+import { Milha } from "../../domain/entities/models/Milha";
 
 
 class CriarMilha{

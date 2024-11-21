@@ -1,4 +1,4 @@
-import { Milha } from "@/app/entities/models/Milha";
+import { Milha } from "@/app/domain/entities/models/Milha";
 import { CriarMilha } from "../../infrastructure/services/CriarMilha";
 import { FastifyReply, FastifyRequest } from "fastify";
 

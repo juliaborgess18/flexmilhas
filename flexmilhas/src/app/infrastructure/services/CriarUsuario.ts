@@ -1,5 +1,5 @@
 import prismaClient from "../prisma";
-import { Usuario } from "../../entities/models/Usuario";
+import { Usuario } from "../../domain/entities/models/Usuario";
 
 class CriarUsuario{
     async execute(usuario: Usuario){
