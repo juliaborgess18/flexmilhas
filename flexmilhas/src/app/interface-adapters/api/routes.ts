@@ -22,4 +22,7 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
         return new CriarMovimentacaoController().handle(request, reply);
     })
 
+    // fastify.get("/minhas-milhas", async(request: FastifyRequest, reply: FastifyReply) => {
+    //     return new ().handle(request, reply);
+    // })
 }

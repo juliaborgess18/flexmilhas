@@ -14,7 +14,7 @@ import {
 const items = [
   {
     title: "Minhas Milhas",
-    url: "#",
+    url: "/usuario/minhas-milhas",
     icon: TicketsPlane,
   },
   {
