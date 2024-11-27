@@ -12,6 +12,7 @@ class CriarMilha{
             const novaMilha = await prismaClient.milha.create({
                 data: {
                     descricao: milha.descricao, 
+                    quantidade: milha.quantidade, 
                     dataValidade: milha.dataValidade, 
                 }
             });

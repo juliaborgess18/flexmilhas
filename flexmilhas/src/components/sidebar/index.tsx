@@ -5,7 +5,7 @@ export function Sidebar({ children }: { children: React.ReactNode }){
     return (
       <SidebarProvider>
         <AppSidebar/>
-        <main>
+        <main className="w-full">
           <SidebarTrigger/>
           <div className="m-8 p-4">
             { children }
